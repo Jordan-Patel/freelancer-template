@@ -1,15 +1,14 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
-	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Denver",
-		"state": "CO",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
-	},
-	"domain": "www.codestitch.app"
+  "name": "Holistic Web Creations",
+  "email": "jordan@holiscticwebcreations.com",
+  "phoneForTel": "+49 1799 372718",
+  "phoneFormatted": "+49 (0) 1799 372718",
+  "address": {
+    "lineOne": "Lenaustr. 13",
+    "city": "Quickborn",
+    "state": "DE",
+    "zip": "25451",
+    "mapLink": "https://goo.gl/maps/mBgNwzzbPpQU9HfN6"
+  },
+  "domain": "www.holisticwebcreations.com"
 }
