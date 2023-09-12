@@ -124,8 +124,6 @@
     }
 
     .cs-button-solid {
-      line-height: clamp(2.875em, 5.5vw, 3.5em);
-      height: initial;
       margin-bottom: calc(16 / 16 * 1rem);
     }
 
@@ -404,6 +402,8 @@
       margin: 0;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
       justify-content: space-evenly;
       align-items: stretch;
       /* 16px - 20px */
@@ -598,6 +598,11 @@
     .cs-item {
       width: 47%;
     }
+
+    .cs-flex {
+      min-height: 22.5rem;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -664,7 +669,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-1088 {
+  #reviews {
     padding: var(--sectionPadding);
     background-color: #f7f7f7;
 
@@ -840,13 +845,42 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-1088 {
+  #reviews {
     .cs-container {
       max-width: calc(1280 / 16 * 1rem);
     }
 
     .cs-item {
       grid-column: span 6;
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #reviews {
+      background-color: rgba(0, 0, 0, 0.2);
+      .cs-title,
+      .cs-text,
+      .cs-item-text,
+      .cs-name,
+      .cs-desc {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-item {
+        background-color: var(--medium);
+      }
+
+      .cs-flex {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .cs-text,
+      .cs-desc {
+        opacity: 0.8;
+      }
     }
   }
 }
